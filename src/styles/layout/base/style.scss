@@ -1,0 +1,35 @@
+.home-section {
+    padding: 35px 0 60px 0;
+}
+
+.title-section {
+    margin-bottom: 45px;
+    font-size: 47px;
+    font-weight: 700;
+}
+
+.select-button {
+    padding: 11px 33px;
+    border-radius: 78px;
+    font-size: 17px;
+    font-weight: 300;
+    background-color: $bg-btn;
+}
+
+.select-button:hover {
+    background-color: $ac-bg-btn;
+    color: $white;
+    box-shadow: 0px 0px 12px 0px rgba(225, 59, 60, 0.9);
+
+}
+
+.page-section--page-banner {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.title-section--quest{
+    font-size: 91px;
+    font-weight: 400;
+    letter-spacing: -3%;
+}

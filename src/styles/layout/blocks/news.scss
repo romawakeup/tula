@@ -1,0 +1,36 @@
+.news__btns {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.news__wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card--news {
+}
+
+.card__pic--news {
+    
+
+}
+
+.card__pic-img--news{
+    border-radius: 12px;
+}
+
+.card__content--news {
+    display: flex;
+    
+}
+
+.card__content-text--news{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    max-width: 210px;
+}

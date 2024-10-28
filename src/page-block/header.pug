@@ -1,0 +1,41 @@
+-
+    var menu = [
+        {
+            title: "О Тульской области",
+        },
+        {
+            title: "Чем заняться",
+        },
+        {
+            title: "Где поесть",
+        },
+        {
+            title: "Где разместиться",
+        },
+        {
+            title: "Маршруты",
+        },
+        {
+            title: "Прием гостей",
+        },
+    
+    ]
+
+
+header.header 
+    .container
+        .header__wrapper
+            .logo 
+                img.logo__img(src="./img/logo-tula.svg", alt="Тула")
+            nav.header__menu
+                each item in menu
+                    ul.header__menu-list 
+                        li.header__menu-item 
+                            a.header__menu-link(href="#")=item.title
+            .header__actions 
+                button.search-btn
+                    img.search-btn__img(src="./img/search-icon.svg", alt="Поиск")  
+                button.langs-btn RU
+                //- button.glaz 
+                //- button.invalid 
+                button.login Войти

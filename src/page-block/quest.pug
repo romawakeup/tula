@@ -1,0 +1,36 @@
+-
+    var cards = [
+        {
+            img: "./img/quest-img1.png",
+            title: "село Бёхово"
+        },
+        {
+            img: "./img/quest-img2.png",
+            title: "устройчивая гастрономия"
+        },
+                {
+            img: "./img/quest-img3.png",
+            title: "достопримечательности"
+        },
+                {
+            img: "./img/quest-img4.png",
+            title: "рестораны в дома с историей"
+        },
+                {
+            img: "./img/quest-img5.png",
+            title: "экопарки"
+        },
+    ]
+
+section.home-section.home-section--quest
+    .container 
+        h2.title-section.title-section--quest Собери мозаику впечатлений
+        .quest__wrapper
+            each item in cards
+                .card.card--quest
+                    .card__pic.card__pic--quest
+                        img.card__pic-img.card__pic-img--quest(src=`${item.img}` alt="")
+                    .card__content
+                        p.card__content-text=item.title
+    .quest__bg 
+        img.quest__bg-img(src="./img/banner-img.jpg", alt="")      
