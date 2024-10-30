@@ -1,0 +1,41 @@
+- 
+    var cards = [
+        {
+            img: "./img/news-img1.png",
+            title: "10 неповторимых сувениров",
+        },
+        {
+            img: "./img/news-img2.png",
+            title: "скачать мобильное приложение",
+        },
+        {
+            img: "./img/news-img3.png",
+            title: "это будет легендарно",
+        },
+        {
+            img: "./img/news-img4.png",
+            title: "конкурс проектов",
+        },
+        {
+            img: "./img/news-img5.png",
+            title: "конкурс проектов",
+        },
+    ]
+
+
+section.home-section.home-section--news
+    .container 
+        h2.title-section Самое интересное
+        .btns__wrapper
+            button.btn.btn--news Все
+            button.btn.btn--news Рекомендации
+            button.btn.btn--news События
+            button.btn.btn--news Новости
+        .news-swiper.swiper
+            .news__wrapper.swiper-wrapper 
+                each item in cards
+                    .card.card--news.swiper-slide
+                        .card__pic.card__pic--news
+                            img.card__pic-img.card__pic-img--news(src=`${item.img}`, alt="")
+                        .card__content.card__content--news 
+                            p.card__content-text.card__content-text--news=item.title

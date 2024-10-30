@@ -1,0 +1,50 @@
+.btn {
+    padding: 12px 35px;
+    border-radius: 78px;
+    background-color: $bg-btn;
+    color: $black;
+}
+
+.btn--header {
+    padding: 10px 20px;
+    background-color: #6667AB;
+    color: $white;
+}
+
+
+.btn--news {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.btn--news:hover {
+    background-color: $ac-bg-btn;
+    color: $white;
+    box-shadow: 0px 0px 12px 0px rgba(225, 59, 60, 0.9);
+}
+
+.btn--banner {
+    display: flex;
+    justify-self: center;
+    padding: 14px 42px;
+    background-color: $ac-bg-btn;
+    color: $white;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.btn--banner:hover{
+    box-shadow: 0px 0px 12px 0px rgba(225, 59, 60, 0.9);
+    
+}
+
+.btn--excursions:hover {
+    background-color: #6667AB;
+    color: $white;
+}
+
+@media (max-width:768px) {
+    .btn{
+        display: none;
+    }
+}

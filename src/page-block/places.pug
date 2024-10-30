@@ -1,0 +1,38 @@
+- 
+    var cards = [
+        {
+            img: "./img/place-img1.png",
+            title: "Усадьбы",
+        },
+        {
+            img: "./img/place-img2.png",
+            title: "Парки и скверы",
+        },
+        {
+            img: "./img/place-img3.png",
+            title: "Монастыри и храмы",
+        },
+        {
+            img: "./img/place-img4.png",
+            title: "Памятники природы",
+        },
+        {
+            img: "./img/place-img5.png",
+            title: "Активный отдых",
+        },
+    ]
+
+
+section.home-section.home-section--places
+    .container 
+        .title__wrapper
+            h2.title-section Куда пойти
+        .places-swiper.swiper
+            .places__wrapper.swiper-wrapper 
+                each item in cards
+                    a.swiper-slide(href="") 
+                        .card.card--places
+                            .card__pic.card__pic--places
+                                img.card__pic-img.card__pic-img--places(src=`${item.img}`, alt="")
+                            .card__content.card__content--places
+                                p.card__content-text.card__content-text--places=item.title

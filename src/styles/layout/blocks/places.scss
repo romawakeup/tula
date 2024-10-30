@@ -1,0 +1,53 @@
+.card--places {}
+
+.card__pic--places {
+    position: relative;
+    
+    
+}
+.card__pic--places::after{
+    content: "";
+    position: absolute;
+    top: 17%;
+    left: 17%;
+    
+    width: 84%;
+    height: 80%;
+    border-radius: 291px;
+    background-color: #C61F4D;
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 0.7s ease;
+}
+
+.card__pic--places:hover::after{
+    opacity: 0;
+}
+
+.card__pic-img--places {
+    width: 100%;
+    height: auto;
+    border-radius: 291px;
+    transition: border-radius .4s ease-in-out;
+
+}
+
+.card__content--places {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card__pic-img--places:hover {
+    border-radius: 12px;
+}
+
+.card__content-text--places {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+    white-space: nowrap;
+}

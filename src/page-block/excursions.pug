@@ -1,0 +1,42 @@
+- 
+    var cards = [
+        {
+            img: "./img/exc-img1.png",
+            title: "Куркино заповедное",
+        },
+        {
+            img: "./img/exc-img2.png",
+            title: "Открываем Тулу заново!",
+        },
+        {
+            img: "./img/exc-img3.png",
+            title: "В гости В.Д. Поленову",
+        },
+        {
+            img: "./img/exc-img4.png",
+            title: "По местам боевой славы Подмосковья и соседних областей",
+        },
+        {
+            img: "./img/exc-img2.png",
+            title: "В гости В.Д. Поленову",
+        },
+    ]
+
+//- excursions
+
+section.home-section.home-section--excursions
+    .container 
+        h2.title-section Нам по пути
+        .btns__wrapper
+            button.btn.btn--excursions Все
+            button.btn.btn--excursions Маршруты
+            button.btn.btn--excursions Экскурсии
+        .excursions-swiper.swiper
+            .excursions__wrapper.swiper-wrapper 
+                each item in cards
+                    a.swiper-slide(href="") 
+                        .card.card--excursions
+                            .card__pic.card__pic--excursions
+                                img.card__pic-img.card__pic-img--excursions(src=`${item.img}`, alt="")
+                            .card__content.card__content--excursions
+                                p.card__content-text.card__content-text--excursions=item.title

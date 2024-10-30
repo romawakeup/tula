@@ -1,0 +1,39 @@
+-
+    var cards = [
+        {
+            img: "./img/quest-img2.png",
+            //- title: "Устройчивая гастрономия"
+        },
+                {
+            img: "./img/quest-img3.png",
+            //- title: "Достопримечательности"
+        },
+                {
+            img: "./img/quest-img4.png",
+            //- title: "Рестораны в дома с историей"
+        },
+                {
+            img: "./img/quest-img5.png",
+            //- title: "Экопарки"
+        },
+    ]
+
+section.home-section.home-section--mosaic
+        .container 
+                h2.title-section.title-section--mosaic Собери мозаику впечатлений
+                .mosaic__wrapper
+                    a(href="#") 
+                        .card.card--mosaic-large
+                            .card__pic.card__pic--mosaic-large
+                                img.card__pic-img.card__pic-img--mosaic(src="./img/quest-img1.png" alt="")
+                            .card__content
+                                p.card__content-text.card__content-text--mosaic 
+                    .mosaic__wrapper-grid
+                        each item in cards
+                            a(href="#") 
+                                .card.card--mosaic
+                                    .card__pic.card__pic--mosaic
+                                        img.card__pic-img.card__pic-img--mosaic(src=`${item.img}` alt="")
+                                    .card__content.card__content--mosaic
+                                        p.card__content-text.card__content-text--mosaic=item.title
+        

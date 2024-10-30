@@ -1,0 +1,57 @@
+-
+    var menu = [
+        {
+            title: "Чем заняться",
+        },
+        {
+            title: "Где поесть",
+        },
+        {
+            title: "Где разместиться",
+        },
+        {
+            title: "Маршруты",
+        },
+        {
+            title: "Прием гостей",
+        },
+    ]
+
+footer.footer 
+    .container 
+        .footer__wrapper 
+            nav.menu.menu--footer
+                each item in menu
+                    ul.menu__list 
+                        li.menu__item 
+                            a.menu__link.menu__link--footer(href="#")=item.title
+            .footer__column
+                a.footer__column-link-help(href="#") Помощь туристу
+                .footer__column-text Данный ресурс носит информационный характер. Администрация не несет ответственности за качество услуг, предоставленных сторонними организациями.
+            .footer__column
+                ul.social
+                    li.social__item 
+                        a.social__link(href="#")
+                            img.social__icon(src="./img/vk-icon.png", alt="")
+                    li.social__item 
+                        a.social__link(href="#")
+                            img.social__icon(src="./img/tg-icon.png", alt="")
+                    li.social__item 
+                        a.social__link(href="#")
+                            img.social__icon(src="./img/tt-icon.png", alt="")
+                    li.social__item 
+                        a.social__link(href="#")
+                            img.social__icon(src="./img/ok-icon.png", alt="")
+                .mail 
+                    img.mail__icon(src="", alt="")
+                    a.mail__link(href="mail:info@visittula.com") info@visittula.com
+                button.btn.btn--footer Связаться с нами
+            .footer__column
+                p.footer__column-copy 2022 ©, Туристический портал Тульской области
+                ul.footer__column-other
+                    li.footer__column-item 
+                        a.footer__column-link(href="#") Карта сайта
+                    li.footer__column-item 
+                        a.footer__column-link(href="#") Политика конфиденциальности
+                    li.footer__column-item 
+                        a.footer__column-link(href="#") Добавить событие 

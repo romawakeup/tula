@@ -1,0 +1,30 @@
+
+.card__pic--excursions{
+    display: inline-block; 
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.card__pic-img--excursions {
+    border-radius: 12px;
+    transition: transform 1s ease-in-out;
+}
+
+.card__pic-img--excursions:hover {
+    transform: scale(1.2);
+}
+
+.card__content-text--excursions {
+    max-width: 300px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.card__content-text--excursions:hover {
+    text-decoration: underline;
+   
+}
+
+@media (max-width:400px) {
+    
+}

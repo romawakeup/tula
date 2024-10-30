@@ -1,0 +1,23 @@
+.burger-menu {
+    display: none;
+}
+
+.burger-menu__el {
+    width: 50px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: $black;
+    margin: 7px 0;
+}
+
+.burger-menu__el:nth-child(2) {
+    justify-self: end;
+    width: 32px;
+}
+
+@media (max-width:1100px) {
+    .burger-menu {
+        display: block;
+        
+    }
+}

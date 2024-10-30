@@ -1,0 +1,30 @@
+body{
+    font-family: 'Formular';
+}
+
+
+.home-section{
+    padding: 35px 0 60px 0;
+}
+
+.title-section {
+    margin-bottom: 45px;
+    font-size: 47px;
+    font-weight: 700;
+}
+
+.page-section--page-banner {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+
+@media (max-width:768px) {
+    .title-section {
+        margin-bottom: 20px;
+        font-size: 25px;
+        
+    }
+}
+
