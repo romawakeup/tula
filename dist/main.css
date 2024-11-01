@@ -145,31 +145,31 @@ body {
   }
 }
 @font-face {
-  font-family: "FormularLight";
+  font-family: "Formular";
   src: url("../fonts/Formular/FormularLight.woff") format("woff"), url("../fonts/Formular/FormularLight.woff2") format("woff2");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
-  font-family: "FormularRegular";
+  font-family: "Formular";
   src: url("../fonts/Formular/FormularRegular.woff") format("woff"), url("../fonts/Formular/FormularRegular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
-  font-family: "FormularMedium";
+  font-family: "Formular";
   src: url("../fonts/Formular/FormularMedium.woff") format("woff"), url("../fonts/Formular/FormularMedium.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
-  font-family: "FormularBold";
+  font-family: "Formular";
   src: url("../fonts/Formular/FormularBold.woff") format("woff"), url("../fonts/Formular/FormularBold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  font-family: "FormularBlack";
+  font-family: "Formular";
   src: url("../fonts/Formular/FormularBlack.woff") format("woff"), url("../fonts/Formular/FormularBlack.woff2") format("woff2");
   font-style: normal;
   font-weight: 900;
@@ -289,6 +289,18 @@ body {
     height: 30px;
   }
 }
+.header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+  transition: background-color 0.5s ease;
+}
+
+.header:hover {
+  background-color: white;
+}
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -296,12 +308,8 @@ body {
   padding-bottom: 16px;
 }
 
-.logo {
-  max-width: 20%;
-  height: auto;
-}
-
 .logo__img {
+  width: 100%;
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
@@ -320,6 +328,11 @@ body {
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.menu__link--header:hover {
+  color: red;
+  font-size: 20px;
 }
 
 .header__actions {
