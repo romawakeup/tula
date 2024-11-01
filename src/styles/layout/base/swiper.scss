@@ -1,11 +1,45 @@
 .swiper {
     width: 100%;
-    
+
 }
 
 .swiper-wrapper {}
 
-.swiper-slide {
+.swiper-slide {}
 
+.swiper-btns {
+    display: flex;
+    gap: 10px;
 }
 
+.btn-next--mod, .btn-prev--mod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+    transition: background-color .5s ease;
+}
+
+.btn-next--mod:hover{
+    background-color: #6667AB;
+}
+
+.btn-prev--mod:hover{
+    background-color: #6667AB;
+    
+}
+.btn-prev-icon {
+}
+
+.btn-next-icon {}
+
+@media (max-width:768px) {
+    .btn-next--mod, .btn-prev--mod{
+        width: 30px;
+        height: 30px;
+       
+    }
+}

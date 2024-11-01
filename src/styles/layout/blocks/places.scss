@@ -1,16 +1,61 @@
+.home-section--places {
+    position: relative;
+}
+
+.home-section--places::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%; 
+    height: 20%; 
+    background-image: url("./img/museum.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.home-section--places::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%; 
+    height: 20%; 
+    background-image: url("./img/pryanik-decorayion2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+
+.title__wrapper--places {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.title-section--places {
+    margin: 0;
+}
+
 .card--places {}
 
 .card__pic--places {
     position: relative;
-    
-    
+    width: 100%;
+    height: auto;
+
 }
-.card__pic--places::after{
+
+.card__pic--places::after {
     content: "";
     position: absolute;
     top: 17%;
     left: 17%;
-    
+
     width: 84%;
     height: 80%;
     border-radius: 291px;
@@ -20,7 +65,7 @@
     transition: opacity 0.7s ease;
 }
 
-.card__pic--places:hover::after{
+.card__pic--places:hover::after {
     opacity: 0;
 }
 
@@ -36,7 +81,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 }
 
 .card__pic-img--places:hover {
@@ -50,4 +95,34 @@
     color: $white;
     text-transform: uppercase;
     white-space: nowrap;
+}
+
+@media (max-width:999px) {
+    .home-section--places::after {
+        display: none;
+    }
+    .home-section--places::before {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .card__pic--places {
+        min-width: 140px;
+        min-height: 140px;
+    }
+
+    .title__wrapper--places {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:715px) {
+    .card__content-text--places {
+        font-size: 20px;
+        white-space: wrap;
+
+    }
+
+
 }

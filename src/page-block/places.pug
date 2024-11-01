@@ -25,8 +25,13 @@
 
 section.home-section.home-section--places
     .container 
-        .title__wrapper
-            h2.title-section Куда пойти
+        .title__wrapper.title__wrapper--places
+            h2.title-section.title-section--places Куда пойти
+            .swiper-btns 
+                button.btn-prev-places.btn-prev--mod
+                    img(src="./img/prev-icon.png", alt="")
+                button.btn-next-places.btn-next--mod
+                    img(src="./img/next-icon.png", alt="")
         .places-swiper.swiper
             .places__wrapper.swiper-wrapper 
                 each item in cards

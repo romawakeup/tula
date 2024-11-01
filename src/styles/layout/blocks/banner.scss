@@ -1,5 +1,22 @@
+.home-section--banner{
+    
+}
+
 .banner__wrapper {
     position: relative;
+}
+
+.banner__wrapper::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    height: 30%;
+    background-image: url("./img/yzor-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
 }
 
 .banner__img {
@@ -10,9 +27,9 @@
 
 .banner__inner {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 }
 
 .banner__text {
@@ -29,32 +46,7 @@
     color: $white;
 }
 
-@media (max-width:768px) {
-    .title-section--banner{
-        font-size: 35px;
-        margin-bottom: 3.5px;
-        
-    }
-    .banner__text {
-        font-size: 15px;
-    }
-    
-}
 
-@media (max-width:1300px) {
-    .container--banner{
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .banner__img{
-        border-radius: 0;
-    }
-
-   
-    
-}
 
 @media (max-width:1200px) {
 
@@ -64,10 +56,45 @@
     
 }
 
-@media (max-width:1000px) {
 
+@media (max-width:999px) {
+    .container--banner{
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .banner__img{
+        max-height: 354px;
+        border-radius: 0;
+        object-fit: contain;
+    }
+
+    .banner__wrapper::before{
+        display: none;
+    }
     .title-section--banner {
         font-size: 40px;
     }
-    
+   
 }
+
+@media (max-width:768px) {
+    .title-section--banner{
+        font-size: 35px;
+        margin-bottom: 3.5px;
+        width: 321px;
+    }
+    .banner__text {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    
+   
+}
+
+
+
+
+
+

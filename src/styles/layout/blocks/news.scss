@@ -1,24 +1,54 @@
-
+.home-section--news {
+    position: relative;
+}
 .news__wrapper {
-  
+    
+}
+
+.title__wrapper--news {
+   
+}
+
+.home-section--news::after {
+    content: "";
+    position: absolute;
+    top: 8%;
+    right: 0%;
+    width: 7%; 
+    height: 30%; 
+    background-image: url("./img/bashnya-decoraion.png");
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
 .card--news {
-    
+    max-width: 293px;
+
+}
+
+.btns__wrapper--news {
+    display: flex;
+    justify-content: space-between;
 }
 
 .card__pic--news {
     width: 100%;
-    height: 290px;
-
+    height:295px;
+    overflow: hidden;
+    border-radius: 12px;
 }
 
 .card__pic-img--news{
-    width: auto;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
+    transition: transform 1s ease-in-out;
+}
+.card__pic-img--news:hover{
+    transform: scale(1.1);
 }
 
 .card__content--news {
@@ -26,12 +56,7 @@
     
 }
 
-.btns__wrapper {
-    margin-bottom: 50px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
+
 
 .card__content-text--news{
     font-size: 18px;
@@ -39,4 +64,29 @@
     line-height: 22px;
     text-transform: uppercase;
     max-width: 210px;
+    color: $black;
+}
+
+@media (max-width:999px) {
+    .home-section--news::after {
+        display: none;
+    }
+}
+
+
+@media (max-width:500px) {
+    .card__pic--news {
+        min-width: 163px;
+        max-height: 155px;
+    
+    }
+
+    .card__pic-img--news{
+        min-width: 163px;
+        max-height: 155px;
+    }
+
+    .card__content-text--news{
+        font-size: 12px;
+    }
 }

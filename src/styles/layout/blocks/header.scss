@@ -8,13 +8,13 @@
 }
 
 .logo {
-    max-width: 164px;
+    max-width: 20%;
     height: auto;
 }
 
 .logo__img {
-    width: 100%;
-    height: 79px;
+    
+    height: auto;
     object-fit: cover;
 }
 
@@ -75,5 +75,12 @@
 
     .header__actions{
         display: none;
+    }
+}
+
+@media ( max-width:768px) {
+    .logo{
+        max-width: 113px;
+        max-height: 52px;
     }
 }

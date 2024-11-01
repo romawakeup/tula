@@ -20,21 +20,38 @@
             img: "./img/news-img5.png",
             title: "конкурс проектов",
         },
+                {
+            img: "./img/news-img5.png",
+            title: "конкурс проектов",
+        },
+                {
+            img: "./img/news-img5.png",
+            title: "конкурс проектов",
+        },
     ]
 
 
 section.home-section.home-section--news
-    .container 
-        h2.title-section Самое интересное
-        .btns__wrapper
-            button.btn.btn--news Все
-            button.btn.btn--news Рекомендации
-            button.btn.btn--news События
-            button.btn.btn--news Новости
+    .container
+        .title__wrapper.title__wrapper--news 
+            h2.title-section.title-section--news Самое интересное
+        .btns__wrapper.btns__wrapper--news
+            .btns__inner
+                button.btn.btn--news Все
+                button.btn.btn--news Рекомендации
+                button.btn.btn--news События
+                button.btn.btn--news Новости
+            .btns__inner-mobile
+                button.btn.btn--excursions Все
+            .swiper-btns 
+                button.btn-prev-news.btn-prev--mod
+                    img(src="./img/prev-icon.svg", alt="")
+                button.btn-next-news.btn-next--mod
+                    img(src="./img/next-icon.svg", alt="")
         .news-swiper.swiper
             .news__wrapper.swiper-wrapper 
                 each item in cards
-                    .card.card--news.swiper-slide
+                    .card.card--news.swiper-slide(href="")
                         .card__pic.card__pic--news
                             img.card__pic-img.card__pic-img--news(src=`${item.img}`, alt="")
                         .card__content.card__content--news 

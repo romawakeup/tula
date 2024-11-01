@@ -1,3 +1,11 @@
+.btns__inner {
+    display: flex;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 .btn {
     padding: 12px 35px;
     border-radius: 78px;
@@ -45,6 +53,14 @@
 
 @media (max-width:768px) {
     .btn{
-        display: none;
+        padding: 7px 15px;
+        font-size: 12px;
+    }
+
+    .btns__wrapper {
+        margin-bottom: 20px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
     }
 }

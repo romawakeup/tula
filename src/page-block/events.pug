@@ -52,9 +52,11 @@ section.home-section.home-section--events
             .events-swiper.swiper
                 .events__wrapper.swiper-wrapper 
                     each item in cards
-                        a.swiper-slide(href="") 
+                        a.swiper-slide(href="#") 
                             .card.card--events
                                 .card__pic.card__pic--events
-                                    img.card__pic-img.card__pic-img--events(src=`${item.img}`, alt="")
+                                    img.card__pic-img.card__pic-img--events(src=`${item.img}`)
                                 .card__content.card__content--events 
                                     p.card__content-text.card__content-text--events=item.title
+                                    .card__content-info-item.card__content-info-item--events 
+                                        p.card__content-info-item-text.card__content-info-item-text--events 12 - 20 апреля 12:00                                     

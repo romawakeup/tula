@@ -56,41 +56,64 @@
 				</div>
 			</section>
 			<section class="home-section home-section--news">
-				<div class="container"> 
-					<h2 class="title-section">Самое интересное</h2>
-					<div class="btns__wrapper">
-						<button class="btn btn--news">Все</button>
-						<button class="btn btn--news">Рекомендации</button>
-						<button class="btn btn--news">События</button>
-						<button class="btn btn--news">Новости</button>
+				<div class="container">
+					<div class="title__wrapper title__wrapper--news"> 
+						<h2 class="title-section title-section--news">Самое интересное</h2>
+					</div>
+					<div class="btns__wrapper btns__wrapper--news">
+						<div class="btns__inner">
+							<button class="btn btn--news">Все</button>
+							<button class="btn btn--news">Рекомендации</button>
+							<button class="btn btn--news">События</button>
+							<button class="btn btn--news">Новости</button>
+						</div>
+						<div class="btns__inner-mobile">
+							<button class="btn btn--excursions">Все</button>
+						</div>
+						<div class="swiper-btns"> 
+							<button class="btn-prev-news btn-prev--mod"><img src="./img/prev-icon.svg" alt=""></button>
+							<button class="btn-next-news btn-next--mod"><img src="./img/next-icon.svg" alt=""></button>
+						</div>
 					</div>
 					<div class="news-swiper swiper">
 						<div class="news__wrapper swiper-wrapper"> 
-							<div class="card card--news swiper-slide">
+							<div class="card card--news swiper-slide" href="">
 								<div class="card__pic card__pic--news"><img class="card__pic-img card__pic-img--news" src="./img/news-img1.png" alt=""></div>
 								<div class="card__content card__content--news"> 
 									<p class="card__content-text card__content-text--news">10 неповторимых сувениров</p>
 								</div>
 							</div>
-							<div class="card card--news swiper-slide">
+							<div class="card card--news swiper-slide" href="">
 								<div class="card__pic card__pic--news"><img class="card__pic-img card__pic-img--news" src="./img/news-img2.png" alt=""></div>
 								<div class="card__content card__content--news"> 
 									<p class="card__content-text card__content-text--news">скачать мобильное приложение</p>
 								</div>
 							</div>
-							<div class="card card--news swiper-slide">
+							<div class="card card--news swiper-slide" href="">
 								<div class="card__pic card__pic--news"><img class="card__pic-img card__pic-img--news" src="./img/news-img3.png" alt=""></div>
 								<div class="card__content card__content--news"> 
 									<p class="card__content-text card__content-text--news">это будет легендарно</p>
 								</div>
 							</div>
-							<div class="card card--news swiper-slide">
+							<div class="card card--news swiper-slide" href="">
 								<div class="card__pic card__pic--news"><img class="card__pic-img card__pic-img--news" src="./img/news-img4.png" alt=""></div>
 								<div class="card__content card__content--news"> 
 									<p class="card__content-text card__content-text--news">конкурс проектов</p>
 								</div>
 							</div>
-							<div class="card card--news swiper-slide">
+							<div class="card card--news swiper-slide" href="">
+								<div class="card__pic card__pic--news"><img class="card__pic-img card__pic-img--news" src="./img/news-img5.png" alt=""></div>
+								<div class="card__content card__content--news"> 
+									<p class="card__content-text card__content-text--news">конкурс проектов</p>
+								</div>
+							</div>
+							<div class="card card--news swiper-slide" href="">
+								<div class="card__pic card__pic--news"><img class="card__pic-img card__pic-img--news" src="./img/news-img5.png" alt=""></div>
+								<div class="card__content card__content--news"> 
+									<p class="card__content-text card__content-text--news">конкурс проектов</p>
+								</div>
+							</div>
+							<div class="card card--news swiper-slide" href="">
 								<div class="card__pic card__pic--news"><img class="card__pic-img card__pic-img--news" src="./img/news-img5.png" alt=""></div>
 								<div class="card__content card__content--news"> 
 									<p class="card__content-text card__content-text--news">конкурс проектов</p>
@@ -105,7 +128,7 @@
 					<h2 class="title-section title-section--mosaic">Собери мозаику впечатлений</h2>
 					<div class="mosaic__wrapper"><a href="#"> 
 							<div class="card card--mosaic-large">
-								<div class="card__pic card__pic--mosaic-large"><img class="card__pic-img card__pic-img--mosaic" src="./img/quest-img1.png" alt=""></div>
+								<div class="card__pic card__pic--mosaic-large"><img class="card__pic-img card__pic-img--mosaic-large" src="./img/quest-img1.png" alt=""></div>
 								<div class="card__content">
 									<p class="card__content-text card__content-text--mosaic"> </p>
 								</div>
@@ -152,8 +175,12 @@
 			</section>
 			<section class="home-section home-section--places">
 				<div class="container"> 
-					<div class="title__wrapper">
-						<h2 class="title-section">Куда пойти</h2>
+					<div class="title__wrapper title__wrapper--places">
+						<h2 class="title-section title-section--places">Куда пойти</h2>
+						<div class="swiper-btns"> 
+							<button class="btn-prev-places btn-prev--mod"><img src="./img/prev-icon.png" alt=""></button>
+							<button class="btn-next-places btn-next--mod"><img src="./img/next-icon.png" alt=""></button>
+						</div>
 					</div>
 					<div class="places-swiper swiper">
 						<div class="places__wrapper swiper-wrapper"> <a class="swiper-slide" href=""> 
@@ -191,7 +218,254 @@
 					</div>
 				</div>
 			</section>
+			<section class="home-section home-section--excursions">
+				<div class="container"> 
+					<h2 class="title-section">Нам по пути</h2>
+					<div class="btns__wrapper btns__wrapper--excursions">
+						<div class="btns__inner">
+							<button class="btn btn--excursions">Все</button>
+							<button class="btn btn--excursions">Маршруты</button>
+							<button class="btn btn--excursions">Экскурсии</button>
+						</div>
+						<div class="btns__inner-mobile">
+							<button class="btn btn--excursions">Все</button>
+						</div>
+						<div class="route__wrapper"><a href="#"> 
+								<div class="route"><img class="route__img" src="./img/route-icon.png" alt="">
+									<p class="route__text">Составьте свой маршрут</p>
+								</div></a>
+							<div class="swiper-btns"> 
+								<button class="btn-prev-exc btn-prev--mod"><img class="btn-prev-icon" src="./img/prev-icon.svg" alt=""></button>
+								<button class="btn-next-exc btn-next--mod"><img class="btn-next-icon" src="./img/next-icon.svg" alt=""></button>
+							</div>
+						</div>
+					</div>
+					<div class="excursions-swiper swiper">
+						<div class="excursions__wrapper swiper-wrapper"> <a class="swiper-slide" href="#"> 
+								<div class="card card--excursions">
+									<div class="card__pic card__pic--excursions"><img class="card__pic-img card__pic-img--excursions" src="./img/exc-img1.png" alt=""></div>
+									<div class="card__content card__content--excursions">
+										<p class="card__content-text card__content-text--excursions">Куркино заповедное</p>
+										<div class="card__content-info-inner card__content-info-inner--excursions">
+											<div class="card__content-info-item card__content-info-item--excursions"> <img src="./img/people-icon.png" alt="">
+												<p>Без ограничений</p>
+											</div>
+											<div class="card__content-info-item card__content-info-item--excursions"> <img src="./img/watch-icon.png" alt="">
+												<p>6 часов</p>
+											</div>
+										</div>
+									</div>
+								</div></a><a class="swiper-slide" href="#"> 
+								<div class="card card--excursions">
+									<div class="card__pic card__pic--excursions"><img class="card__pic-img card__pic-img--excursions" src="./img/exc-img2.png" alt=""></div>
+									<div class="card__content card__content--excursions">
+										<p class="card__content-text card__content-text--excursions">Открываем Тулу заново!</p>
+										<div class="card__content-info-inner card__content-info-inner--excursions">
+											<div class="card__content-info-item card__content-info-item--excursions"> <img src="./img/people-icon.png" alt="">
+												<p>Без ограничений</p>
+											</div>
+											<div class="card__content-info-item card__content-info-item--excursions"> <img src="./img/watch-icon.png" alt="">
+												<p>6 часов</p>
+											</div>
+										</div>
+									</div>
+								</div></a><a class="swiper-slide" href="#"> 
+								<div class="card card--excursions">
+									<div class="card__pic card__pic--excursions"><img class="card__pic-img card__pic-img--excursions" src="./img/exc-img3.png" alt=""></div>
+									<div class="card__content card__content--excursions">
+										<p class="card__content-text card__content-text--excursions">В гости В.Д. Поленову</p>
+										<div class="card__content-info-inner card__content-info-inner--excursions">
+											<div class="card__content-info-item card__content-info-item--excursions"> <img src="./img/people-icon.png" alt="">
+												<p>Без ограничений</p>
+											</div>
+											<div class="card__content-info-item card__content-info-item--excursions"> <img src="./img/watch-icon.png" alt="">
+												<p>6 часов</p>
+											</div>
+										</div>
+									</div>
+								</div></a><a class="swiper-slide" href="#"> 
+								<div class="card card--excursions">
+									<div class="card__pic card__pic--excursions"><img class="card__pic-img card__pic-img--excursions" src="./img/exc-img4.png" alt=""></div>
+									<div class="card__content card__content--excursions">
+										<p class="card__content-text card__content-text--excursions">По местам боевой славы Подмосковья и соседних областей</p>
+										<div class="card__content-info-inner card__content-info-inner--excursions">
+											<div class="card__content-info-item card__content-info-item--excursions"> <img src="./img/people-icon.png" alt="">
+												<p>Без ограничений</p>
+											</div>
+											<div class="card__content-info-item card__content-info-item--excursions"> <img src="./img/watch-icon.png" alt="">
+												<p>6 часов</p>
+											</div>
+										</div>
+									</div>
+								</div></a><a class="swiper-slide" href="#"> 
+								<div class="card card--excursions">
+									<div class="card__pic card__pic--excursions"><img class="card__pic-img card__pic-img--excursions" src="./img/exc-img2.png" alt=""></div>
+									<div class="card__content card__content--excursions">
+										<p class="card__content-text card__content-text--excursions">В гости В.Д. Поленову</p>
+										<div class="card__content-info-inner card__content-info-inner--excursions">
+											<div class="card__content-info-item card__content-info-item--excursions"> <img src="./img/people-icon.png" alt="">
+												<p>Без ограничений</p>
+											</div>
+											<div class="card__content-info-item card__content-info-item--excursions"> <img src="./img/watch-icon.png" alt="">
+												<p>6 часов</p>
+											</div>
+										</div>
+									</div>
+								</div></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="home-section home-section--events">
+				<div class="container">
+					<div class="title__wrapper title__wrapper--events"> 
+						<h2 class="title-section title-section--events">Ближайшие события</h2><a class="events__title-link" href="#">Посмотреть все события</a>
+					</div>
+				</div>
+				<div class="events-bg__wrapper">
+					<div class="container">
+						<div class="events-swiper swiper">
+							<div class="events__wrapper swiper-wrapper"> <a class="swiper-slide" href="#"> 
+									<div class="card card--events">
+										<div class="card__pic card__pic--events"><img class="card__pic-img card__pic-img--events" src="./img/events-img2.png"></div>
+										<div class="card__content card__content--events"> 
+											<p class="card__content-text card__content-text--events">Интерактивная выставка «История деревянных игр»</p>
+											<div class="card__content-info-item card__content-info-item--events"> 
+												<p class="card__content-info-item-text card__content-info-item-text--events">12 - 20 апреля 12:00                                     </p>
+											</div>
+										</div>
+									</div></a><a class="swiper-slide" href="#"> 
+									<div class="card card--events">
+										<div class="card__pic card__pic--events"><img class="card__pic-img card__pic-img--events" src="./img/events-img3.png"></div>
+										<div class="card__content card__content--events"> 
+											<p class="card__content-text card__content-text--events">Уроки по сольному джазу</p>
+											<div class="card__content-info-item card__content-info-item--events"> 
+												<p class="card__content-info-item-text card__content-info-item-text--events">12 - 20 апреля 12:00                                     </p>
+											</div>
+										</div>
+									</div></a><a class="swiper-slide" href="#"> 
+									<div class="card card--events">
+										<div class="card__pic card__pic--events"><img class="card__pic-img card__pic-img--events" src="./img/events-img4.png"></div>
+										<div class="card__content card__content--events"> 
+											<p class="card__content-text card__content-text--events">Выставка «Семейное  Дело» в Музейном квартале</p>
+											<div class="card__content-info-item card__content-info-item--events"> 
+												<p class="card__content-info-item-text card__content-info-item-text--events">12 - 20 апреля 12:00                                     </p>
+											</div>
+										</div>
+									</div></a><a class="swiper-slide" href="#"> 
+									<div class="card card--events">
+										<div class="card__pic card__pic--events"><img class="card__pic-img card__pic-img--events" src="./img/events-img5.png"></div>
+										<div class="card__content card__content--events"> 
+											<p class="card__content-text card__content-text--events">Экскурсия «По страницамистории: Тула XVI–XX в.»</p>
+											<div class="card__content-info-item card__content-info-item--events"> 
+												<p class="card__content-info-item-text card__content-info-item-text--events">12 - 20 апреля 12:00                                     </p>
+											</div>
+										</div>
+									</div></a><a class="swiper-slide" href="#"> 
+									<div class="card card--events">
+										<div class="card__pic card__pic--events"><img class="card__pic-img card__pic-img--events" src="./img/events-img3.png"></div>
+										<div class="card__content card__content--events"> 
+											<p class="card__content-text card__content-text--events">Уроки по сольному джазу</p>
+											<div class="card__content-info-item card__content-info-item--events"> 
+												<p class="card__content-info-item-text card__content-info-item-text--events">12 - 20 апреля 12:00                                     </p>
+											</div>
+										</div>
+									</div></a><a class="swiper-slide" href="#"> 
+									<div class="card card--events">
+										<div class="card__pic card__pic--events"><img class="card__pic-img card__pic-img--events" src="./img/events-img4.png"></div>
+										<div class="card__content card__content--events"> 
+											<p class="card__content-text card__content-text--events">Выставка «Семейное  Дело» в Музейном квартале</p>
+											<div class="card__content-info-item card__content-info-item--events"> 
+												<p class="card__content-info-item-text card__content-info-item-text--events">12 - 20 апреля 12:00                                     </p>
+											</div>
+										</div>
+									</div></a><a class="swiper-slide" href="#"> 
+									<div class="card card--events">
+										<div class="card__pic card__pic--events"><img class="card__pic-img card__pic-img--events" src="./img/events-img4.png"></div>
+										<div class="card__content card__content--events"> 
+											<p class="card__content-text card__content-text--events">Выставка «Семейное  Дело» в Музейном квартале</p>
+											<div class="card__content-info-item card__content-info-item--events"> 
+												<p class="card__content-info-item-text card__content-info-item-text--events">12 - 20 апреля 12:00                                     </p>
+											</div>
+										</div>
+									</div></a><a class="swiper-slide" href="#"> 
+									<div class="card card--events">
+										<div class="card__pic card__pic--events"><img class="card__pic-img card__pic-img--events" src="./img/events-img5.png"></div>
+										<div class="card__content card__content--events"> 
+											<p class="card__content-text card__content-text--events">Экскурсия «По страницамистории: Тула XVI–XX в.»</p>
+											<div class="card__content-info-item card__content-info-item--events"> 
+												<p class="card__content-info-item-text card__content-info-item-text--events">12 - 20 апреля 12:00                                     </p>
+											</div>
+										</div>
+									</div></a><a class="swiper-slide" href="#"> 
+									<div class="card card--events">
+										<div class="card__pic card__pic--events"><img class="card__pic-img card__pic-img--events" src="./img/events-img3.png"></div>
+										<div class="card__content card__content--events"> 
+											<p class="card__content-text card__content-text--events">Уроки по сольному джазу</p>
+											<div class="card__content-info-item card__content-info-item--events"> 
+												<p class="card__content-info-item-text card__content-info-item-text--events">12 - 20 апреля 12:00                                     </p>
+											</div>
+										</div>
+									</div></a><a class="swiper-slide" href="#"> 
+									<div class="card card--events">
+										<div class="card__pic card__pic--events"><img class="card__pic-img card__pic-img--events" src="./img/events-img4.png"></div>
+										<div class="card__content card__content--events"> 
+											<p class="card__content-text card__content-text--events">Выставка «Семейное  Дело» в Музейном квартале</p>
+											<div class="card__content-info-item card__content-info-item--events"> 
+												<p class="card__content-info-item-text card__content-info-item-text--events">12 - 20 апреля 12:00                                     </p>
+											</div>
+										</div>
+									</div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
+		<footer class="footer"> 
+			<div class="container"> 
+				<div class="footer__wrapper"> 
+					<nav class="menu menu--footer">
+						<ul class="menu__list"> 
+							<li class="menu__item"> <a class="menu__link menu__link--footer" href="#">Чем заняться</a></li>
+						</ul>
+						<ul class="menu__list"> 
+							<li class="menu__item"> <a class="menu__link menu__link--footer" href="#">Где поесть</a></li>
+						</ul>
+						<ul class="menu__list"> 
+							<li class="menu__item"> <a class="menu__link menu__link--footer" href="#">Где разместиться</a></li>
+						</ul>
+						<ul class="menu__list"> 
+							<li class="menu__item"> <a class="menu__link menu__link--footer" href="#">Маршруты</a></li>
+						</ul>
+						<ul class="menu__list"> 
+							<li class="menu__item"> <a class="menu__link menu__link--footer" href="#">Прием гостей</a></li>
+						</ul>
+					</nav>
+					<div class="footer__column"><a class="footer__column-link-help" href="#">Помощь туристу</a>
+						<div class="footer__column-text">Данный ресурс носит информационный характер. Администрация не несет ответственности за качество услуг, предоставленных сторонними организациями.</div>
+					</div>
+					<div class="footer__column">
+						<ul class="social">
+							<li class="social__item"> <a class="social__link" href="#"><img class="social__icon" src="./img/vk-icon.png" alt=""></a></li>
+							<li class="social__item"> <a class="social__link" href="#"><img class="social__icon" src="./img/tg-icon.png" alt=""></a></li>
+							<li class="social__item"> <a class="social__link" href="#"><img class="social__icon" src="./img/tt-icon.png" alt=""></a></li>
+							<li class="social__item"> <a class="social__link" href="#"><img class="social__icon" src="./img/ok-icon.png" alt=""></a></li>
+						</ul>
+						<div class="mail"> <img class="mail__icon" src="" alt=""><a class="mail__link" href="mail:info@visittula.com">info@visittula.com</a></div>
+						<button class="btn btn--footer">Связаться с нами</button>
+					</div>
+					<div class="footer__column">
+						<p class="footer__column-copy">2022 ©, Туристический портал Тульской области</p>
+						<ul class="footer__column-other">
+							<li class="footer__column-item"> <a class="footer__column-link" href="#">Карта сайта</a></li>
+							<li class="footer__column-item"> <a class="footer__column-link" href="#">Политика конфиденциальности</a></li>
+							<li class="footer__column-item"> <a class="footer__column-link" href="#">Добавить событие </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="./js/swiper.js"></script>
 	</body>

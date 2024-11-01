@@ -1,6 +1,10 @@
+.btns__wrapper--excursions {
+    display: flex;
+    justify-content: space-between;
+}
 
-.card__pic--excursions{
-    display: inline-block; 
+.card__pic--excursions {
+    display: inline-block;
     overflow: hidden;
     border-radius: 12px;
 }
@@ -18,13 +22,93 @@
     max-width: 300px;
     font-size: 19px;
     font-weight: 700;
+    color: $black;
 }
 
 .card__content-text--excursions:hover {
     text-decoration: underline;
-   
+
 }
 
-@media (max-width:400px) {
-    
+.route__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.route {
+    display: flex;
+    text-align: center;
+    justify-self: flex-end;
+    gap: 15px;
+}
+
+.route__img {
+    width: 69px;
+    height: 67px;
+    object-fit: cover;
+}
+
+.route__text {
+    max-width: 130px;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1.44;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: $black;
+}
+
+.card__content-info-inner--excursions {
+    margin-top: 10px;
+    display: flex;
+    gap: 13px;
+}
+
+.card__content-info-item--excursions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $black;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.btns__inner-mobile {
+    display: none;
+}
+
+@media (max-width:999px) {
+    .route__img {
+        display: none;
+    }
+
+    .route__text {
+        max-width: none;
+        font-size: 11px;
+        text-decoration: none;
+        color: #CF2144;
+    }
+    .card__content-text--excursions {
+        max-width: 300px;
+        font-size: 16px;
+
+    }
+    .btns__inner{
+        display: none;
+    }
+
+    .btns__inner-mobile {
+        display: block;
+    }
+
+    .card__content-info-inner--excursions {
+       flex-wrap: wrap;
+       
+    }
+
+    .card__content-info-item--excursions {
+       font-size: 11px;
+    }
 }

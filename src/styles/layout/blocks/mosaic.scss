@@ -21,31 +21,113 @@
 
 .mosaic__wrapper {
     display: flex;
-    gap: 60px;
+    gap: 5%;
     position: relative;
     z-index: 2;
 }
+
+.card__pic--mosaic-large{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.card__pic-img--mosaic-large{
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 1s ease-in-out;
+    position: relative;
+}
+
+.card__pic-img--mosaic-large:hover{
+    transform: scale(1.2);
+}
+
+.card--mosaic-large::before {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: -4%;
+    width: 9.722222%; /* 70px/720px */
+    height: 15.208333%; /* 73px/480 */
+    background-image: url("./img/decoration-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
 
 .mosaic__wrapper-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 60px;
-    grid-row-gap: 40px;
+    grid-column-gap: 5%;
+    grid-row-gap: 2%;
     align-items: center;
-}
-
-.card__pic--mosaic {
     position: relative;
 }
 
+// .mosaic__wrapper::after{
+//     content: "";
+//     position: absolute;
+//     top: 10%;
+//     right: -15%;
+//     width: 10%; 
+//     height: 20%; 
+//     background-image: url("./img/pryanik-decoration.png");
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     z-index: 1;
+// }
+
+.mosaic__wrapper-grid::before{
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: -77%;
+    width: 20%; 
+    height: 20%; 
+    background-image: url("./img/samovar-decoration.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+.card__pic--mosaic {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.card__pic--mosaic::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 7%; 
+    height: 7%; 
+    background-image: url("./img/decoration-icon.png");
+    transform: rotate(90deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
 
 
 .card__pic-img--mosaic {
-    border-radius: 20px;
+    border-radius: 5%;
     width: 100%;
     height: auto;
+    object-fit: cover;
+    transition: transform 1s ease-in-out;
 }
+.card__pic-img--mosaic:hover {
+    transform: scale(1.2);
+}
+
 
 .card__content--mosaic {
     
@@ -65,38 +147,84 @@
     color: $white;
     white-space: nowrap;
     text-align: center;
+    position: relative;
 }
 
-@media (max-width:1200px) {
-    .title-section--mosaic{
-        margin-bottom: 60px;
-        font-size: 70px;
+.title-section--mosaic::before {
+    content: "";
+    position: absolute;
+   top: 0;
+    left: 0;
+    width: 9%;
+    height: 115%;
+    background-image: url("./img/heart-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.title-section--mosaic::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 4.2%;
+    height: 62%;
+    background-image: url("./img/round-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+@media(max-width:1900px) {
+    .mosaic__wrapper-grid::before{
+        display: none;
     }
 }
 
-@media (max-width:900px) {
+@media (max-width:1450px) {
+    .title-section--mosaic{
+        font-size: 80px;
+    }
+}
+
+@media (max-width:1250px) {
+    .title-section--mosaic{
+        margin-bottom: 60px;
+        font-size: 65px;
+    }
+}
+
+@media (max-width:1000px) {
     .title-section--mosaic{
         margin-bottom: 40px;
         font-size: 50px;
     }
 }
-@media (max-width:650px) {
+@media (max-width:768px) {
     .title-section--mosaic{
         margin-bottom: 20px;
-        font-size: 30px;
+        font-size: 40px;
     }
     .home-section--mosaic{
         padding: 50px 0 85px 0;
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:650px) {
+    .title-section--mosaic{
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width:500px) {
     .title-section--mosaic{
         margin-bottom: 15px;
         font-size: 15px;
     }
-
     .home-section--mosaic{
         padding: 25px 0 40px 0;
     }
 }
+
