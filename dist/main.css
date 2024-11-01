@@ -1203,6 +1203,10 @@ body {
   text-transform: uppercase;
 }
 
+.menu__link--footer:hover {
+  color: red;
+}
+
 .footer__column-link-help {
   display: block;
   margin-bottom: 20px;
@@ -1210,6 +1214,10 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+}
+
+.footer__column-link-help:hover {
+  color: red;
 }
 
 .footer__column-text {
@@ -1250,6 +1258,10 @@ body {
   white-space: nowrap;
 }
 
+.btn--footer:hover {
+  box-shadow: 0px 0px 12px 0px rgba(225, 59, 60, 0.9);
+}
+
 .footer__column-copy {
   font-size: 16px;
   margin-bottom: 25px;
@@ -1265,6 +1277,10 @@ body {
   font-size: 17px;
   font-weight: 700;
   color: #000000;
+}
+
+.footer__column-link:hover {
+  color: red;
 }
 
 @media (max-width: 1150px) {
