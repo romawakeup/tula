@@ -250,12 +250,20 @@ body {
   width: 100%;
 }
 
+.swiper-wrapper {
+  max-width: 1590px;
+  padding: 0 15px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
 .swiper-btns {
   display: flex;
   gap: 10px;
 }
 
-.btn-next--mod, .btn-prev--mod {
+.btn-next--mod,
+.btn-prev--mod {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,7 +283,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  .btn-next--mod, .btn-prev--mod {
+  .btn-next--mod,
+.btn-prev--mod {
     width: 30px;
     height: 30px;
   }
@@ -405,6 +414,10 @@ body {
 }
 .home-section--news {
   position: relative;
+}
+
+.news__wrapper {
+  overflow: visible;
 }
 
 .home-section--news::after {
@@ -923,6 +936,7 @@ body {
   display: flex;
   align-items: center;
   gap: 25px;
+  margin-bottom: 20px;
 }
 
 .route {
@@ -1000,6 +1014,10 @@ body {
 
   .card__content-info-item--excursions {
     font-size: 11px;
+  }
+
+  .btns__wrapper--excursions {
+    margin: 0;
   }
 }
 .events-bg__wrapper {

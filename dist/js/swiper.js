@@ -29,7 +29,7 @@ const swiperNews = new Swiper(".news-swiper", {
 
 const swiperPlaces = new Swiper(".places-swiper", {
   loop: true,
-  slidesPerView: 4,
+  slidesPerView: "auto",
   spaceBetween: 20,
   navigation: {
     nextEl: ".btn-next-places",
@@ -57,8 +57,8 @@ const swiperPlaces = new Swiper(".places-swiper", {
 
 const swiperExc = new Swiper(".excursions-swiper", {
   loop: true,
-  slidesPerView: 4.5,
-  spaceBetween: 20,
+  slidesPerView: "auto",
+  spaceBetween: 10,
   navigation: {
     nextEl: ".btn-next-exc",
     prevEl: ".btn-prev-exc",
@@ -85,7 +85,8 @@ const swiperExc = new Swiper(".excursions-swiper", {
 
 const swiperEvents = new Swiper(".events-swiper", {
   loop: true,
-  slidesPerView: 4.5,
+  slidesPerView: 5,
+  spaceBetween: 10,
   breakpoints: {
     20: {
       slidesPerView: 2,

@@ -20,6 +20,19 @@
             img: "./img/place-img5.png",
             title: "Активный отдых",
         },
+                {
+            img: "./img/place-img5.png",
+            title: "Активный отдых",
+        },        {
+            img: "./img/place-img5.png",
+            title: "Активный отдых",
+        },        {
+            img: "./img/place-img5.png",
+            title: "Активный отдых",
+        },        {
+            img: "./img/place-img5.png",
+            title: "Активный отдых",
+        },
     ]
 
 
@@ -32,12 +45,12 @@ section.home-section.home-section--places
                     img(src="./img/prev-icon.png", alt="")
                 button.btn-next-places.btn-next--mod
                     img(src="./img/next-icon.png", alt="")
-        .places-swiper.swiper
-            .places__wrapper.swiper-wrapper 
-                each item in cards
-                    a.swiper-slide(href="") 
-                        .card.card--places
-                            .card__pic.card__pic--places
-                                img.card__pic-img.card__pic-img--places(src=`${item.img}`, alt="")
-                            .card__content.card__content--places
-                                p.card__content-text.card__content-text--places=item.title
+    .places-swiper.swiper
+        .places__wrapper.swiper-wrapper 
+            each item in cards
+                a.swiper-slide(href="") 
+                    .card.card--places
+                        .card__pic.card__pic--places
+                            img.card__pic-img.card__pic-img--places(src=`${item.img}`, alt="")
+                        .card__content.card__content--places
+                            p.card__content-text.card__content-text--places=item.title

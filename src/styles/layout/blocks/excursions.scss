@@ -34,6 +34,7 @@
     display: flex;
     align-items: center;
     gap: 25px;
+    margin-bottom: 20px;
 }
 
 .route {
@@ -41,6 +42,7 @@
     text-align: center;
     justify-self: flex-end;
     gap: 15px;
+    
 }
 
 .route__img {
@@ -110,5 +112,9 @@
 
     .card__content-info-item--excursions {
        font-size: 11px;
+    }
+
+    .btns__wrapper--excursions {
+        margin: 0;
     }
 }

@@ -28,6 +28,19 @@
             img: "./img/news-img5.png",
             title: "конкурс проектов",
         },
+                        {
+            img: "./img/news-img5.png",
+            title: "конкурс проектов",
+        },
+                        {
+            img: "./img/news-img5.png",
+            title: "конкурс проектов",
+        },
+                        {
+            img: "./img/news-img5.png",
+            title: "конкурс проектов",
+        },
+        
     ]
 
 
@@ -48,11 +61,11 @@ section.home-section.home-section--news
                     img(src="./img/prev-icon.svg", alt="")
                 button.btn-next-news.btn-next--mod
                     img(src="./img/next-icon.svg", alt="")
-        .news-swiper.swiper
-            .news__wrapper.swiper-wrapper 
-                each item in cards
-                    .card.card--news.swiper-slide(href="")
-                        .card__pic.card__pic--news
-                            img.card__pic-img.card__pic-img--news(src=`${item.img}`, alt="")
-                        .card__content.card__content--news 
-                            p.card__content-text.card__content-text--news=item.title
+    .news-swiper.swiper
+        .news__wrapper.swiper-wrapper 
+            each item in cards
+                .card.card--news.swiper-slide(href="")
+                    .card__pic.card__pic--news
+                        img.card__pic-img.card__pic-img--news(src=`${item.img}`, alt="")
+                    .card__content.card__content--news 
+                        p.card__content-text.card__content-text--news=item.title
